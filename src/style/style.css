@@ -2,10 +2,52 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Roboto;
+    font-style: normal;
 }
 h1 {
     font-size: 50px;
     font-weight: bold;
     width: 100%;
     text-align: center;
+}
+.mobile {
+    display: none;
+}
+
+li {
+    list-style-type: none;
+}
+.promo {
+    background-color: #EEEFF1;
+    padding: 45px 0 145px;
+}
+.promo .promo__container {
+    max-width: 1113px;
+    display: flex;
+    justify-content:space-between;
+    margin: 0 auto;
+}
+
+.promo .promo__menu {
+    background-color: #E5E9F0;
+    padding: 33px 45px;
+    max-width: 700px;
+
+
+}
+
+.promo .promo__menu ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.promo .promo__menu li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
 }
