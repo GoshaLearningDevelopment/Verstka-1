@@ -175,7 +175,7 @@
     margin-top: 4.5px;
 }
 
-.middle {
+.middle .container {
     display: block;
     
    padding:88px 0 75px 0 ;
@@ -198,12 +198,14 @@
 
     color: #252525;
 }
-.middle .middle_divider {
-   
-    
-    background: #F9BF3B;
+.middle_divider {
+
+    background-color: #F9BF3B;
     margin: 0 auto;
     margin-top: 20px;
+
+    width: 220px;
+ height: 7px;
 }
 
 .middle .title_m2 {
@@ -245,10 +247,18 @@
 
 .middle .container_w {
     /* margin-top: 122px; */
-    
+    position: relative;
     
     display: block;
     
+}
+
+.woman {
+
+    position: absolute;
+    z-index: -1;
+    left: 150px;
+    top: 47px;
 }
 
 .middle .container_w .optimization {
@@ -261,6 +271,7 @@
     text-transform: uppercase;
 
     color: #299CBD;
+    padding: 108px 0 25px 781px;
 }
 
 .middle .container_w .text {
@@ -270,18 +281,71 @@
     font-style: normal;
     font-weight: 300;
     font-size: 17px;
-    line-height: 27px;
-    /* or 159% */
+    
     color: #4A4A4A;
     margin-top: 25px;
+    margin-left: 781px;
+    margin-bottom: 74px;
 }
 
 .middle .container_w .text .bold_txt {
     font-weight: bold;
 }
 
-.bottom {
-    background: url('../images/Rectangle\ 1\ copy.png') center center/cover;
-    
-    display: block;
+.bottom_abilities {
+    background: url('../assets/images/Rectangle\ 1\ copy.png') center center/ cover;
+    padding-top: 86px;
+    padding-bottom: 70px;
+}
+
+.bottom_abilities .title_b {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+
+    color: #EFEFEF;
+
+}
+
+.bottom_abilities .bottom_wraper {
+    display: flex;
+    padding-top: 68px;
+    justify-content: space-between;
+    max-width: 920px;
+    margin: 0 auto;
+    align-items: top;
+}
+
+.bottom_abilities .bottom_wraper .item_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    color: #EFEFEF;
+    max-width: 234px;
+}
+
+.bottom_item {
+    text-align: center;
+  
+}
+.bottom_round {
+    width: 118px;
+    height: 118px;
+
+    background: #B4E2FF;
+
+    margin: 0 auto;
+
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_text {
+    margin-top: 25px;
 }
