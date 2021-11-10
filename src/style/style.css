@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 .header {
     height: 800px;
@@ -128,6 +129,7 @@
     display: block;
     margin: 0 auto;
     outline: none;
+    padding: 24px 15px;
     
 
    
@@ -137,7 +139,7 @@
 
     
 
-    font-family: RobotoCondensed;
+    font-family: Roboto+Condensed;
     font-size: 21px;
 
     /* identical to box height, or 114% */
@@ -348,4 +350,96 @@
 
 .item_text {
     margin-top: 25px;
+}
+
+.gift .container {
+    background: #EFEFEF;
+    padding: 88px 380px;
+}
+
+.gift .txt {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: #252525;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+.gift button {
+    background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    padding: 24px 15px;
+
+    margin: 0 auto;
+    display: block;
+    font-family: Roboto+Condensed;
+    font-size: 21px;    
+    color: #FFFFFF;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+    text-transform: uppercase;
+
+}
+
+.gift_img {
+    margin: 0 auto;
+    display: block;
+}
+
+.firs_vebinar .container {
+    padding: 80px 0 52px 0;
+}
+
+.firs_vebinar .laptop {
+    margin: 0 auto;
+    display: block;
+}
+
+.first_veb_txt {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: #252525;
+    margin-top: 36px;
+    text-transform: uppercase;
+}
+
+.firs_vebinar .date {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+
+    color: #299CBD;
+}
+
+.rush {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    text-align: center;
+
+    color: #4A4A4A;
+    margin-top: 24px;
+}
+
+.footer {
+    background: #1A1A1A;
+
+    padding: 57px 0 69px 0;
+    text-align: center;
+    color: #888888;
+}
+
+.footer a {
+    color: #888888;
 }
