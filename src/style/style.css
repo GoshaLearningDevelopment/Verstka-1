@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Roboto;
 }
 
 .header {
@@ -23,7 +24,7 @@
 
 .logo .logo_text {
 
-    font-family: Roboto; /*Если так часто используешь font-family то почему не глобально? */
+     
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -33,16 +34,16 @@
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 9.5px; /*Пиксель минимальное значение, которое есть у монитора, такое не делится*/
+    margin-top: 9px; /*Пиксель минимальное значение, которое есть у монитора, такое не делится*/
 
     color: #FFFFFF;
 }
 
 .title_1 {
-    margin: 53px auto 20.5px;
+    margin: 53px auto 20px;
     display: block;
 
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: 900;
     font-size: 41px;
@@ -59,7 +60,7 @@
 .simple .title_big {
 
 
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: 900;
     font-size: 80px;
@@ -75,11 +76,11 @@
 }
 
 .title_2 {
-    margin: 20.05px auto 22.5px;
+    margin: 20px auto 22px;
     display: block;
 
 
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: 900;
     font-size: 41px;
@@ -98,7 +99,7 @@
     padding: 0 13px;
     margin-bottom: 72px;
 
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: 300;
     font-size: 21px;
@@ -150,7 +151,7 @@
 .more_inf {
 
 
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: 200;
     font-size: 15px;
@@ -162,11 +163,11 @@
     text-transform: uppercase;
 
     color: #FFFFFF;
-    margin-top: 70.5px;
+    margin-top: 70px;
 }
 
 .more_img {
-    margin-top: 4.5px;
+    margin-top: 4px;
 }
 
 .middle .container {
@@ -180,7 +181,7 @@
 
 .middle .title_m1 {
 
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -207,7 +208,7 @@
 
     margin-top: 19.5px;
 
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: normal;
     font-size: 23px;
@@ -218,7 +219,7 @@
 }
 
 .middle .middle_wraper {
-    margin: 45.5px auto 0;
+    margin: 45px auto 0;
     display: flex;
     justify-content: space-between;
     max-width: 1120px;
@@ -231,7 +232,7 @@
 }
 
 .middle .middle_wraper .middle_descr {
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -260,7 +261,7 @@
 .middle .container_w .optimization {
 
 
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: 900;
     font-size: 30px;
@@ -273,7 +274,7 @@
 .middle .container_w .text {
 
 
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: 300;
     font-size: 17px;
@@ -295,7 +296,7 @@
 }
 
 .bottom_abilities .title_b {
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -315,7 +316,7 @@
 }
 
 .bottom_abilities .bottom_wraper .item_text {
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: 300;
     font-size: 17px;
@@ -354,7 +355,7 @@
 
 .gift .txt {
     text-align: center;
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -395,7 +396,7 @@
 
 .first_veb_txt {
     text-align: center;
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -405,7 +406,7 @@
 }
 
 .firs_vebinar .date {
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: 900;
     font-size: 36px;
@@ -417,7 +418,7 @@
 }
 
 .rush {
-    font-family: Roboto;
+    
     font-style: normal;
     font-weight: normal;
     font-size: 23px;
@@ -427,7 +428,7 @@
     margin-top: 24px;
 }
 
-.footer {
+footer {
     background: #1A1A1A;
 
     padding: 57px 0 69px 0;
@@ -435,6 +436,6 @@
     color: #888888;
 }
 
-.footer a {
+footer a {
     color: #888888;
 }
