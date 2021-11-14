@@ -111,7 +111,7 @@ li {
     font-size: 32px;
 }
 
-.about .about_container .divider {
+.divider {
     background: #E5E9F0;
     width: 80px;
     height: 7px;
@@ -152,8 +152,39 @@ li {
     font-size: 16px;
     line-height: 26px;
     color: #FFFFFF;
+    margin-left: 20px;
 }
 
+.skills {
+    padding: 100px 0;
+    background-color: #EEEFF1;
+}
+
+.skills__container .slash {
+    position: absolute;
+    left: 400px;
+}
+
+.skills__container .JS {
+    position: absolute;
+    top: 500px;
+}
+
+.skills_wraper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.skills__container .photo {
+    width: 555px;
+    height: 450px;
+    box-shadow: 9px 9px 130px rgba(52, 84, 122, 0.5);
+}
+
+.skills_item .divider {
+    margin: 10px 0 0 0;
+}
 
 
 
