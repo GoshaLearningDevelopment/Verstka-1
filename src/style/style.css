@@ -157,7 +157,7 @@ li {
 
 .skills {
     padding: 100px 0;
-    background-color: #EEEFF1;
+    
 }
 
 .skills__container .slash {
@@ -165,9 +165,9 @@ li {
     left: 400px;
 }
 
-.skills__container .JS {
+.skills__container .java {
     position: absolute;
-    top: 500px;
+    top: 450px;
 }
 
 .skills_wraper {
@@ -184,6 +184,91 @@ li {
 
 .skills_item .divider {
     margin: 10px 0 0 0;
+}
+
+.skills .skills__slider {
+    margin-top: 34px;
+}
+
+.skills .skills__slider .slider_item {
+    margin-bottom: 30px;
+}
+
+.skills .skills__slider .slider_item .slider_text {
+    margin-bottom: 20px;
+    color: #727272;
+}
+
+.skills .skills__slider .slider_item .gray_line {
+    width: 445px;
+    height: 4px;
+    background: #C4C4C4;
+}
+
+.skills .skills__slider .slider_item .gray_line .blue_line {
+    width: 50%;
+    height: 100%;
+    background: #34547A;
+}
+
+.work {
+    padding: 100px 0;
+    background: #EEEFF1; 
+    text-align: center;
+    align-items: center;
+}
+
+.work h2 {
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+}
+
+.work .divider {
+    width: 269px;
+    background: rgba(52, 84, 122, 0.3);
+    margin: 0 auto 35px;
+}
+
+.work h4 {
+    width: 540px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+    margin: 0 auto;
+    margin-bottom: 57px;
+    font-weight: normal;
+}
+
+.work video {
+    width: 1110px;
+    height: 600px;
+}
+
+.cards {
+    padding-top: 35px;
+}
+
+.cards .cards_container .tasks {
+    width: 25%;
+    height: 25%;  
+}
+
+.cards .cards_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.microsoft {
+    padding: 85px 0;
+}
+
+.microsoft .microsoft_container {
+    display: flex;
+    justify-content: space-between;
 }
 
 
