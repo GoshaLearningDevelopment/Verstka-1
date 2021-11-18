@@ -1,0 +1,35 @@
+/* селектор: {
+    свойство: правило;
+    свойство: правило;
+    ...
+} 
+.*название класса*{}- обращение к классу (class)
+#*id* {}- обращение по уникальному индетефикатору (id)*/
+body {
+    background-color: khaki;
+}
+
+.head {
+    color: red;
+}
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.curve {
+    font-style: italic;
+}
