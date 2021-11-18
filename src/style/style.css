@@ -165,7 +165,7 @@ li {
     left: 400px;
 }
 
-.skills__container .java {
+.skills__container .java_icon {
     position: absolute;
     top: 450px;
 }
@@ -199,13 +199,14 @@ li {
     color: #727272;
 }
 
-.skills .skills__slider .slider_item .gray_line {
-    width: 445px;
+.gray_line {
+    min-width: 325px;
     height: 4px;
+    width: 100%;
     background: #C4C4C4;
 }
 
-.skills .skills__slider .slider_item .gray_line .blue_line {
+.gray_line .blue_line {
     width: 50%;
     height: 100%;
     background: #34547A;
