@@ -6,29 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="script/script.js"></script>
     <title>Портфолио</title>
 </head>
 <body>
     <section class="promo">
-        <div class="promo__container">
-            <div class="wd desktop">
-                <img src="assets/icons/WD.svg" alt="wd">
-            </div>
-            <nav class="promo__menu">
-                <div class="wd mobile">
+        <div class="container">
+            <div class="promo__container">
+                <div class="wd desktop">
                     <img src="assets/icons/WD.svg" alt="wd">
                 </div>
-               <ul>
-                    <li class="active">Главная</li>
-                    <li>Об авторе</li>
-                    <li>Работы</li>
-                    <li>Процесс</li>
-                    <li>Контакты</li>
-            </ul>
-            </nav>
-        
+                <nav class="promo__menu">
+                    <div class="wd mobile">
+                        <img src="assets/icons/WD.svg" alt="wd">
+                    </div>
+                <ul>
+                        <li class="active">Главная</li>
+                        <li>Об авторе</li>
+                        <li>Работы</li>
+                        <li>Процесс</li>
+                        <li>Контакты</li>
+                </ul>
+                </nav>
+            
+            </div>
         </div>
         <div class="container">
             <div class="promo_info">
@@ -46,10 +49,10 @@
                     </button>
                 </div>
                 <div class="iconQr">
-                    <img src="assets/icons/clarity_qr-code-line.svg" alt="">
+                    <img src="assets/icons/clarity_qr-code-line.svg" alt="qr">
                 </div>
                 <div class="iconBinaryKey">
-                    <img src="assets/icons/carbon_code-signing-service.svg" alt="">
+                    <img src="assets/icons/carbon_code-signing-service.svg" alt="iconBinaryKey">
                 </div>
             </div>
         </div>
@@ -205,14 +208,15 @@
                     <div class="divider"> </div>
                     <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem id totam minima sapiente error qui neque rerum ratione molestias! Soluta modi quidem perspiciatis labore, voluptas fugiat reiciendis a maiores beatae.</h4>
                 </div>
-                <form action="/form/submit" method="get">
+                <form action="" method="get" id="form">
                     <div class="inputs">
-                        <input type="text" size="50" placeholder="Ваше Имя">
-                    <input type="email" size="50" placeholder="Ваш e-mail">
-                    </div>
-                    <br>
-                    <textarea placeholder="Сообщение"></textarea> <br>
-                    <input type="submit" value="Отправить" class="btn">
+                        <input type="text" size="50" placeholder="Ваше Имя"  id="name">
+                        <input type="email" size="50" placeholder="Ваш e-mail"  id="mail">
+                        </div>
+                        <br>
+                        <textarea id="request" placeholder="Сообщение"></textarea> <br>
+                        
+                        <input type="submit" onclick="button()" value="Отправить" class="btn" id="submit">
                 </form>
                 <img src="assets/icons/3shield.png" alt="" class="shield3">
             </div>

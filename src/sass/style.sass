@@ -19,7 +19,7 @@ li
 .promo 
 	background-color: #EEEFF1 
 	padding: 30px 0 145px 
-	height: 100vh 
+	/** height: 100vh  **/
 	.promo__container 
 		max-width: 1113px 
 		display: flex 
@@ -41,6 +41,10 @@ li
 			text-transform: uppercase 
 			margin: 0 10px 
 			width: max-content 
+			cursor: pointer
+			&:hover
+				color: #34547A
+			
 .promo_info 
 	display: flex 
 	margin-top: 130px 
@@ -58,15 +62,17 @@ li
 		filter: drop-shadow(-6px 5px 0px rgba(52, 84, 122, 0.2)) 
 		background: #34547A 
 		padding: 25px 41px 
-		color: #FFFFFF 
+		color: #FFFFFF
+		&:hover
+			cursor: pointer 
 .iconQr 
 	position: absolute 
 	right: 0 
-	top: -18px 
+	top: -50px 
 .iconBinaryKey 
 	position: absolute 
 	left: 0 
-	bottom: -41px 
+	bottom: -100px 
 .promo__laptop 
 	margin-left: 122px 
 .about 
@@ -194,6 +200,7 @@ li
 		display: flex 
 		justify-content: space-between 
 
+
 .feedback
 	background-color: #EEEFF1
 	padding: 100px 0
@@ -221,7 +228,8 @@ li
 			background-color: #34547A4D
 			width: 320px
 	.inputs
-		margin: 65px 0 0
+		display: block
+		margin: 65px auto 0
 		padding-left: 305px
 		input
 			width: 250px
@@ -235,10 +243,11 @@ li
 			&:first-child
 				margin-right: 35px
 	textarea
+		display: block
 		width: 540px
 		height: 175px
 		border: none
-		margin: 20px 305px 50px
+		margin: 20px auto 50px auto
 		resize: none
 		padding: 20px
 		font-family: Roboto
@@ -246,6 +255,7 @@ li
 		font-weight: normal
 		font-size: 14px
 	.btn
+		display: block
 		filter: drop-shadow(-6px 5px 0px rgba(52, 84, 122, 0.1))
 		width: 190px
 		height: 55px
@@ -257,7 +267,9 @@ li
 		color: #FFFFFF
 		background: #34547A99
 		text-transform: uppercase
-		margin-left: 480px
+		margin: 0 auto
+		&:hover
+			cursor: pointer
 footer
 	background: #34547A
 	padding: 50px 0 50px
@@ -276,8 +288,54 @@ footer
 			font-size: 13px
 			color: #FFFFFF
 
-		
- 
-/** @media (max-width 769px) 
+@media (max-width: 1441px)
+	.container
+		max-width: 862px
+	.promo_info
+		h1
+			font-size: 45px
+	.promo__laptop
+		margin-left: 0
+		display: -webkit-box
+	.promo__text
+		text-align: center
+	.skills__container
+		.slash
+			left: 379px
+		.photo
+			height: 310px
+			width: 374px
+		.java_icon
+			top: 325px
+	.work
+		video
+			width: 862px
+			height: 500px
+
+	.feedback
+		.inputs
+			padding-left: 162px
+		.shield5
+			left: 856px
+		.shield3
+			left: -140px
+
+@media (max-width: 1025px)
+	.feedback
+		.shield5
+			left: 775px
+		.shield3
+			left: 0px
+		.inputs
+			padding-left: 160px
+
+@media (max-width: 1158px)
+	.microsoft
+		.microsoft_img
+			&:first-child
+				display: none
+				
+
+@media (max-width: 769px) 
 	.desktop
-    	display: none  **/
+    	display: none 
