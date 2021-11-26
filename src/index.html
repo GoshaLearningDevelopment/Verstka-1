@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <!--Возьмёшь нужные стили и поменяешь, я препроцессоры компилирую через nodeJs так что здесь просто скомпилил и вставил css-->
-    <!--    <link rel="stylesheet" href="css/style.min.css">-->
-    <link rel="stylesheet" href="css/style.test.css">
+       <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="stylesheet" href="css/style.test.css"> -->
     <!--Скрипты подключаются перед закрытием тэга body-->
     <title>Портфолио</title>
 </head>
@@ -224,11 +224,32 @@
 </section>
 <section class="microsoft">
     <div class="container">
+        <div class="microsoft_container desktop">
+            <img src="assets/images/Rectangle 9.png" alt="" class="microsoft_img">
+            <img src="assets/images/Rectangle 9.png" alt="" class="microsoft_img">
+            <img src="assets/images/Rectangle 9.png" alt="" class="microsoft_img">
+            <img src="assets/images/Rectangle 9.png" alt="" class="microsoft_img">
+        </div>
         <div class="microsoft_container">
-            <img src="assets/images/Rectangle 9.png" alt="" class="microsoft_img">
-            <img src="assets/images/Rectangle 9.png" alt="" class="microsoft_img">
-            <img src="assets/images/Rectangle 9.png" alt="" class="microsoft_img">
-            <img src="assets/images/Rectangle 9.png" alt="" class="microsoft_img">
+            <div class="slider middle">
+                <div class="slider">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <input type="radio" name="r" id="r4">
+
+                    <div class="slide s1"><img src="assets/images/Rectangle 9.png" alt=""></div>
+                    <div class="slide"><img src="assets/images/Rectangle 9.png" alt=""></div>
+                    <div class="slide"><img src="assets/images/Rectangle 9.png" alt=""></div>
+                    <div class="slide"><img src="assets/images/Rectangle 9.png" alt=""></div>
+                </div>
+                <div class="navigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                    <label for="r4" class="bar"></label>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -243,18 +264,18 @@
                     error qui neque rerum ratione molestias! Soluta modi quidem perspiciatis labore, voluptas fugiat
                     reiciendis a maiores beatae.</h4>
             </div>
-            <form id="form">
-                <div class="inputs">
-                    <!--Не закрыл тэги и не используй айдишники, это делает вёрстку очень неповоротливой-->
-                    <input type="text" name="name" size="50" placeholder="Ваше Имя" id="name">
-                    <input type="email" name="email" size="50" placeholder="Ваш e-mail" id="mail">
-                </div>
-                <br>
-                <textarea id="request" name="message" placeholder="Сообщение"></textarea> <br>
-                <!--Молодец, что работает, но это делается не так, написал в js файле-->
-                <!--<input type="submit" onclick="button()" value="Отправить" class="btn" id="submit">-->
-                <input type="submit" value="Отправить" class="btn" id="submit">
-            </form>
+<!-- <form id="form"> -->
+<!-- <div class="inputs"> -->
+<!-- Не закрыл тэги и не используй айдишники, это делает вёрстку очень неповоротливой -->
+<!-- <input type="text" name="name" size="50" placeholder="Ваше Имя" id="name"> -->
+<!-- <input type="email" name="email" size="50" placeholder="Ваш e-mail" id="mail"> -->
+<!-- </div> -->
+<!-- <br> -->
+<!-- <textarea id="request" name="message" placeholder="Сообщение"></textarea> <br> -->
+<!-- Молодец, что работает, но это делается не так, написал в js файле -->
+<!-- <input type="submit" onclick="button()" value="Отправить" class="btn" id="submit"> -->
+<!-- <input type="submit" value="Отправить" class="btn" id="submit"> -->
+<!-- </form> -->
 
             <form >
                 <div class="inputs">
@@ -278,13 +299,13 @@
             <div class="footer_item">
                 <h2> Новиков Георгий</h2>
                 <!--Напиши правильный год-->
-                <h6>(с) 2018. Все права защищены.</h6>
+                <h6>(с) 2021. Все права защищены.</h6>
             </div>
             <div class="footer_item">
                 <!--Сделай с помощью ссылки, чтобы было правильно-->
-                <img src="assets/icons/vk.png" alt="vk" class="vk">
-                <img src="assets/icons/vk.png" alt="vk" class="vk">
-                <img src="assets/icons/vk.png" alt="vk" class="vk">
+                <a href="https://vk.com/sortirnyjgnomsadovnik"><img src="assets/icons/vk.png" alt="vk" class="vk"></a>
+                <a href="https://vk.com/sortirnyjgnomsadovnik"><img src="assets/icons/vk.png" alt="vk" class="vk"></a>
+                <a href="https://vk.com/sortirnyjgnomsadovnik"><img src="assets/icons/vk.png" alt="vk" class="vk"></a>
             </div>
         </div>
     </div>
