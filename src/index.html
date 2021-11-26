@@ -7,236 +7,288 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
-    <script src="script/script.js"></script>
+    <!--Возьмёшь нужные стили и поменяешь, я препроцессоры компилирую через nodeJs так что здесь просто скомпилил и вставил css-->
+    <!--    <link rel="stylesheet" href="css/style.min.css">-->
+    <link rel="stylesheet" href="css/style.test.css">
+    <!--Скрипты подключаются перед закрытием тэга body-->
     <title>Портфолио</title>
 </head>
 <body>
-    <section class="promo">
-        <div class="container">
-            <div class="promo__container">
-                <div class="wd desktop">
+<section class="promo">
+    <div class="container">
+        <div class="promo__container">
+            <div class="wd desktop">
+                <img src="assets/icons/WD.svg" alt="wd">
+            </div>
+            <nav class="promo__menu">
+                <div class="wd mobile">
                     <img src="assets/icons/WD.svg" alt="wd">
                 </div>
-                <nav class="promo__menu">
-                    <div class="wd mobile">
-                        <img src="assets/icons/WD.svg" alt="wd">
-                    </div>
                 <ul>
-                        <li class="active">Главная</li>
-                        <li>Об авторе</li>
-                        <li>Работы</li>
-                        <li>Процесс</li>
-                        <li>Контакты</li>
+                    <li class="active">Главная</li>
+                    <li>Об авторе</li>
+                    <li>Работы</li>
+                    <li>Процесс</li>
+                    <li>Контакты</li>
                 </ul>
-                </nav>
-            
-            </div>
-        </div>
-        <div class="container">
-            <div class="promo_info">
-                <div class="promo__laptop">
-                    <img src="assets/icons/Frame.svg" alt="laptop">
-                    <button class="writeMe mobile">
-                        НАПИСАТЬ МНЕ
-                    </button>
-                </div>
-                <div class="promo__text">
-                    <h1>Дизайн и верстка</h1>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolores a ea quidem, hic architecto possimus alias, modi, quam suscipit expedita rem inventore laudantium ipsum! Sit explicabo quae repudiandae asperiores!</h4>
-                    <button class="writeMe desktop">
-                        НАПИСАТЬ МНЕ
-                    </button>
-                </div>
-                <div class="iconQr">
-                    <img src="assets/icons/clarity_qr-code-line.svg" alt="qr">
-                </div>
-                <div class="iconBinaryKey">
-                    <img src="assets/icons/carbon_code-signing-service.svg" alt="iconBinaryKey">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="about">
-        <div class="about_container">
-            <h2>
-                Обо мне
-            </h2>
-            <div class="divider">
+            </nav>
 
-            </div>
-            <h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus impedit provident mollitia sint ipsam aliquam, cumque omnis quia eos accusantium. Dolorum autem omnis ea et placeat similique, optio ipsum quidem!
-            </h4>
         </div>
-    </section>
-    <section class="projects">
-        <div class="container">
-            <div class="projects__container">
-                <div class="item">
-                    <div class="item_img">
-                        <img src="assets/icons/40_projects.svg" alt="project"/>
-                    </div>
-                    <div class="item_txt">
-                        <span>40+</span><br>проектов
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item_img">
-                        <img src="assets/icons/40_projects.svg" alt="project"/>
-                    </div>
-                    <div class="item_txt">
-                        <span>40+</span><br>проектов
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item_img">
-                        <img src="assets/icons/40_projects.svg" alt="project"/>
-                    </div>
-                    <div class="item_txt">
-                        <span>40+</span><br>проектов
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item_img">
-                        <img src="assets/icons/40_projects.svg" alt="project"/>
-                    </div>
-                    <div class="item_txt">
-                        <span>40+</span><br>проектов
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="item_img">
-                        <img src="assets/icons/40_projects.svg" alt="project"/>
-                    </div>
-                    <div class="item_txt">
-                        <span>40+</span><br>проектов
-                    </div>
-                </div>
+    </div>
+    <div class="container">
+        <div class="promo_info">
+            <div class="promo__laptop">
+                <img src="assets/icons/Frame.svg" alt="laptop">
+                <button class="writeMe mobile">
+                    НАПИСАТЬ МНЕ
+                </button>
+            </div>
+            <div class="promo__text">
+                <h1>Дизайн и верстка</h1>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolores a ea quidem, hic architecto
+                    possimus alias, modi, quam suscipit expedita rem inventore laudantium ipsum! Sit explicabo quae
+                    repudiandae asperiores!</h4>
+                <!--Убери у кнопки обводку, пропиши стиль глобпльно, чтобы не было такого нигде-->
+                <button class="writeMe desktop">
+                    НАПИСАТЬ МНЕ
+                </button>
+            </div>
+            <div class="iconQr">
+                <img src="assets/icons/clarity_qr-code-line.svg" alt="qr">
+            </div>
+            <div class="iconBinaryKey">
+                <img src="assets/icons/carbon_code-signing-service.svg" alt="iconBinaryKey">
             </div>
         </div>
-    </section>
-    <section class="skills">
-        <div class="container">
-            <div class="skills__container">
-                <img src="assets/icons/bi_code-slash.svg" alt="icon" class="slash">
-                <img src="assets/icons/JS.svg" alt="icon" class="java_icon">
-                <div class="skills_wraper">
-                    <div class="skills_item">
-                        <h2>
-                            Мои навыки
-                        </h2>
-                        <div class="divider">
+    </div>
+</section>
+<section class="about">
+    <div class="about_container">
+        <h2>
+            Обо мне
+        </h2>
+        <div class="divider">
 
-                        </div> 
-                        <div class="skills__slider">
-                           <div class="slider_item">
-                               <div class="slider_text">Adobe Photoshop</div>
-                               <div class="slider_line">
-                                   <div class="gray_line">
-                                       <div class="blue_line">
-
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                           <div class="slider_item">
-                               <div class="slider_text">Adobe Photoshop</div>
-                               <div class="slider_line">
-                                   <div class="gray_line">
-                                       <div class="blue_line">
-
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                           <div class="slider_item">
-                               <div class="slider_text">Adobe Photoshop</div>
-                               <div class="slider_line">
-                                   <div class="gray_line">
-                                       <div class="blue_line"></div>
-                                   </div>
-                               </div>
-                           </div>
-                        </div>  
-                    </div>
-                    <div class="skills_item">
-                        <img src="assets/images/Rectangle 3.png" alt="photo" class="photo">
-                    </div>
+        </div>
+        <h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus impedit provident mollitia sint ipsam
+            aliquam, cumque omnis quia eos accusantium. Dolorum autem omnis ea et placeat similique, optio ipsum quidem!
+        </h4>
+    </div>
+</section>
+<section class="projects">
+    <div class="container">
+        <div class="projects__container">
+            <div class="item">
+                <div class="item_img">
+                    <img src="assets/icons/40_projects.svg" alt="project"/>
+                </div>
+                <div class="item_txt">
+                    <span>40+</span><br>проектов
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_img">
+                    <img src="assets/icons/40_projects.svg" alt="project"/>
+                </div>
+                <div class="item_txt">
+                    <span>40+</span><br>проектов
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_img">
+                    <img src="assets/icons/40_projects.svg" alt="project"/>
+                </div>
+                <div class="item_txt">
+                    <span>40+</span><br>проектов
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_img">
+                    <img src="assets/icons/40_projects.svg" alt="project"/>
+                </div>
+                <div class="item_txt">
+                    <span>40+</span><br>проектов
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_img">
+                    <img src="assets/icons/40_projects.svg" alt="project"/>
+                </div>
+                <div class="item_txt">
+                    <span>40+</span><br>проектов
                 </div>
             </div>
         </div>
-    </section>
-    <section class="work">
-        <div class="container">
-            <div class="work_container">
-                <h2>Как я работаю</h2>
-                <div class="divider"></div>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nesciunt tenetur nulla nisi laudantium molestias nihil libero perferendis alias dolor culpa odit enim dicta id inventore ab, soluta voluptate ducimus?</h4>
-                <video src="assets/video/Betonomeshalka.mp4" controls poster="assets/images/Rectangle 5.jpg"></video>
-            </div>
-        </div>
-    </section>
-    <section class="cards">
-        <div class="cards_container"> 
-            <div class="cards_item"><img src="assets/images/stickers.png" alt=""></div>
-            <div class="cards_item"><img src="assets/images/laptop.png" alt=""></div>
-            <div class="cards_item"><img src="assets/images/stickers.png" alt=""></div>
-            <div class="cards_item"><img src="assets/images/laptop.png" alt=""></div>
-            <div class="cards_item"><img src="assets/images/stickers.png" alt=""></div>
-            <div class="cards_item"><img src="assets/images/laptop.png" alt=""></div>
-            <div class="cards_item"><img src="assets/images/stickers.png" alt=""></div>
-            <div class="cards_item"><img src="assets/images/laptop.png" alt=""></div>
-        </div>
-    </section>
-    <section class="microsoft">
-        <div class="container">
-            <div class="microsoft_container">
-                <img src="assets/images/Rectangle 9.png" alt="" class="microsoft_img">
-                <img src="assets/images/Rectangle 9.png" alt="" class="microsoft_img">
-                <img src="assets/images/Rectangle 9.png" alt="" class="microsoft_img">
-                <img src="assets/images/Rectangle 9.png" alt="" class="microsoft_img">
-            </div>
-        </div>
-    </section>
-    <section class="feedback">
-        <div class="container">
-            <div class="feedback_container">
-                <img src="assets/icons/5shield.png" alt="html5" class="shield5">
-                <div class="feedback_text">
-                    <h2>Хотите веб-сайт?</h2>
-                    <div class="divider"> </div>
-                    <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem id totam minima sapiente error qui neque rerum ratione molestias! Soluta modi quidem perspiciatis labore, voluptas fugiat reiciendis a maiores beatae.</h4>
-                </div>
-                <form action="" method="get" id="form">
-                    <div class="inputs">
-                        <input type="text" size="50" placeholder="Ваше Имя"  id="name">
-                        <input type="email" size="50" placeholder="Ваш e-mail"  id="mail">
+    </div>
+</section>
+<section class="skills">
+    <div class="container">
+        <div class="skills__container">
+            <img src="assets/icons/bi_code-slash.svg" alt="icon" class="slash">
+            <img src="assets/icons/JS.svg" alt="icon" class="java_icon">
+            <div class="skills_wraper">
+                <div class="skills_item">
+                    <h2>
+                        Мои навыки
+                    </h2>
+                    <div class="divider">
+
+                    </div>
+                    <div class="skills__slider">
+                        <div class="slider_item">
+                            <div class="slider_text">Adobe Photoshop</div>
+                            <div class="slider_line">
+                                <div class="gray_line">
+                                    <div class="blue_line">
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <br>
-                        <textarea id="request" placeholder="Сообщение"></textarea> <br>
-                        
-                        <input type="submit" onclick="button()" value="Отправить" class="btn" id="submit">
-                </form>
-                <img src="assets/icons/3shield.png" alt="" class="shield3">
-            </div>
-        </div>
+                        <div class="slider_item">
+                            <div class="slider_text">Adobe Photoshop</div>
+                            <div class="slider_line">
+                                <div class="gray_line">
+                                    <div class="blue_line">
 
-    </section>
-    <footer>
-        <div class="container">
-            <div class="container_footer">
-                <div class="footer_item">
-                    <h2> Новиков Георгий</h2>
-                    <h6>(с) 2018. Все права защищены.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_item">
+                            <div class="slider_text">Adobe Photoshop</div>
+                            <div class="slider_line">
+                                <div class="gray_line">
+                                    <div class="blue_line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer_item">
-                    <img src="assets/icons/vk.png" alt="vk" class="vk">
-                    <img src="assets/icons/vk.png" alt="vk" class="vk">
-                    <img src="assets/icons/vk.png" alt="vk" class="vk">
+                <div class="skills_item">
+                    <img src="assets/images/Rectangle 3.png" alt="photo" class="photo">
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
+<section class="work">
+    <div class="container">
+        <div class="work_container">
+            <h2>Как я работаю</h2>
+            <div class="divider"></div>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nesciunt tenetur nulla nisi laudantium
+                molestias nihil libero perferendis alias dolor culpa odit enim dicta id inventore ab, soluta voluptate
+                ducimus?</h4>
+            <video src="assets/video/Betonomeshalka.mp4" controls poster="assets/images/Rectangle 5.jpg"></video>
+        </div>
+    </div>
+</section>
+<section class="cards">
+    <div class="cards_container">
+        <!--Теперь ховеры работают-->
+        <div class="cards_item">
+            <div class="cards_blur"></div>
+            <img src="assets/images/stickers.png" alt="">
+        </div>
+        <div class="cards_item">
+            <div class="cards_blur"></div>
+            <img src="assets/images/laptop.png" alt="">
+        </div>
+        <div class="cards_item">
+            <div class="cards_blur"></div>
+            <img src="assets/images/stickers.png" alt="">
+        </div>
+        <div class="cards_item">
+            <div class="cards_blur"></div>
+            <img src="assets/images/laptop.png" alt="">
+        </div>
+        <div class="cards_item">
+            <div class="cards_blur"></div>
+            <img src="assets/images/stickers.png" alt="">
+        </div>
+        <div class="cards_item">
+            <div class="cards_blur"></div>
+            <img src="assets/images/laptop.png" alt="">
+        </div>
+        <div class="cards_item">
+            <div class="cards_blur"></div>
+            <img src="assets/images/stickers.png" alt="">
+        </div>
+        <div class="cards_item">
+            <div class="cards_blur"></div>
+            <img src="assets/images/laptop.png" alt="">
+        </div>
+    </div>
+</section>
+<section class="microsoft">
+    <div class="container">
+        <div class="microsoft_container">
+            <img src="assets/images/Rectangle 9.png" alt="" class="microsoft_img">
+            <img src="assets/images/Rectangle 9.png" alt="" class="microsoft_img">
+            <img src="assets/images/Rectangle 9.png" alt="" class="microsoft_img">
+            <img src="assets/images/Rectangle 9.png" alt="" class="microsoft_img">
+        </div>
+    </div>
+</section>
+<section class="feedback">
+    <div class="container">
+        <div class="feedback_container">
+            <img src="assets/icons/5shield.png" alt="html5" class="shield5">
+            <div class="feedback_text">
+                <h2>Хотите веб-сайт?</h2>
+                <div class="divider"></div>
+                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem id totam minima sapiente
+                    error qui neque rerum ratione molestias! Soluta modi quidem perspiciatis labore, voluptas fugiat
+                    reiciendis a maiores beatae.</h4>
+            </div>
+            <form id="form">
+                <div class="inputs">
+                    <!--Не закрыл тэги и не используй айдишники, это делает вёрстку очень неповоротливой-->
+                    <input type="text" name="name" size="50" placeholder="Ваше Имя" id="name">
+                    <input type="email" name="email" size="50" placeholder="Ваш e-mail" id="mail">
+                </div>
+                <br>
+                <textarea id="request" name="message" placeholder="Сообщение"></textarea> <br>
+                <!--Молодец, что работает, но это делается не так, написал в js файле-->
+                <!--<input type="submit" onclick="button()" value="Отправить" class="btn" id="submit">-->
+                <input type="submit" value="Отправить" class="btn" id="submit">
+            </form>
+
+            <form >
+                <div class="inputs">
+                    <!--Не закрыл тэги-->
+                    <input type="text" name="name"  size="50" placeholder="Ваше Имя" >
+                    <input type="email" name="email" size="50" placeholder="Ваш e-mail" >
+                </div>
+                <br>
+                <textarea name="message" placeholder="Сообщение"></textarea> <br>
+
+                <input type="submit" value="Отправить" class="btn" >
+            </form>
+            <img src="assets/icons/3shield.png" alt="" class="shield3">
+        </div>
+    </div>
+
+</section>
+<footer>
+    <div class="container">
+        <div class="container_footer">
+            <div class="footer_item">
+                <h2> Новиков Георгий</h2>
+                <!--Напиши правильный год-->
+                <h6>(с) 2018. Все права защищены.</h6>
+            </div>
+            <div class="footer_item">
+                <!--Сделай с помощью ссылки, чтобы было правильно-->
+                <img src="assets/icons/vk.png" alt="vk" class="vk">
+                <img src="assets/icons/vk.png" alt="vk" class="vk">
+                <img src="assets/icons/vk.png" alt="vk" class="vk">
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="script/script.js"></script>
 </body>
 </html>

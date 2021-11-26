@@ -1,3 +1,4 @@
+/*
 function button() {
     var name = document.getElementById('name').value;
     var mail1 = document.getElementById('mail').value;
@@ -5,3 +6,21 @@ function button() {
 
     alert("Имя: "+name+"\nE-mail: "+mail1+"\nСообщение: "+request);
 }
+*/
+
+/* Не сказал бы, что это лучший код, который я писал, но он куда универсальнее чем твой, посмотри как он работает */
+
+const forms = document.querySelectorAll("form")
+
+forms.forEach((form) => {
+    let AllInputs = form.querySelectorAll("input[type='text'], input[type='email'], input[type='phone'], textarea"
+    )
+    AllInputs = Array.from(AllInputs)
+    const submit = form.querySelector("input[type='submit']")
+    submit.addEventListener("click", function (e) {
+        e.preventDefault()
+        const AllInputsValue = AllInputs.map((input) => input.value && input.attributes.name.value + ": " + input.value)
+        const stringValue = AllInputsValue.join(" \n")
+        console.log(stringValue.replace(/\s+/g, '') ? stringValue : "Инпуты пустые")
+    }, false)
+})
