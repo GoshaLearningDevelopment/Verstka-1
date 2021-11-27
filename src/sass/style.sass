@@ -8,6 +8,7 @@ h1
 	font-size: 50px 
 	font-weight: bold 
 	width: 100% 
+
 .container 
 	max-width: 1150px 
 	margin: 0 auto 
@@ -57,14 +58,14 @@ li
 		color: #727272 
 		line-height: 26px 
 		font-weight: normal 
-	.writeMe 
-		margin-top: 60px 
-		filter: drop-shadow(-6px 5px 0px rgba(52, 84, 122, 0.2)) 
-		background: #34547A 
-		padding: 25px 41px 
-		color: #FFFFFF 
-		&:hover 
-			cursor: pointer 
+.writeMe 
+	margin-top: 60px 
+	filter: drop-shadow(-6px 5px 0px rgba(52, 84, 122, 0.2)) 
+	background: #34547A 
+	padding: 25px 41px 
+	color: #FFFFFF 
+	&:hover 
+		cursor: pointer 
 .iconQr 
 	position: absolute 
 	right: 0 
@@ -101,8 +102,10 @@ li
 	.projects__container 
 		display: flex 
 		justify-content: space-between 
+		flex-wrap: wrap
 		.item 
 			display: flex 
+			margin: 0 6px
 		.item_txt 
 			font-style: normal 
 			font-weight: normal 
@@ -166,7 +169,6 @@ li
 		background: rgba(52, 84, 122, 0.3) 
 		margin: 0 auto 35px 
 	h4 
-		width: 540px 
 		font-size: 16px 
 		line-height: 26px 
 		text-align: center 
@@ -175,8 +177,8 @@ li
 		margin-bottom: 57px 
 		font-weight: normal 
 	video 
-		width: 1110px 
-		height: 600px 
+		width: 95%
+   		 height: 95%
 .cards 
 	.cards_container 
 		display: grid 
@@ -212,7 +214,7 @@ li
 					background: url("../assets/icons/eyeProject.svg") center center / cover 
 .microsoft 
 	padding: 85px 0 
-	.microsoft_container 
+	.microsoft_container_slider 
 		display: flex 
 		justify-content: space-between 
 		.slider
@@ -289,7 +291,6 @@ li
 			font-weight: normal 
 			font-size: 16px 
 			line-height: 26px 
-			width: 540px 
 			color: #727272 
 		.divider 
 			background: rgba(52, 84, 122, 0.3) 
@@ -365,6 +366,9 @@ footer
 		display: -webkit-box
 	.promo__text
 		text-align: center
+	.projects
+		.container
+			max-width: 1150px
 	.skills__container
 		.slash
 			left: 379px
@@ -375,8 +379,8 @@ footer
 			top: 325px
 	.work
 		video
-			width: 862px
-			height: 500px
+			width: 95%
+   			height: 95%
 
 	.feedback
 		.inputs
@@ -405,3 +409,181 @@ footer
 @media (max-width: 769px) 
 	.desktop
     	display: none 
+	.mobile
+		display: block
+	.promo
+		padding: 0 0 145px
+		.promo_info
+			flex-direction: column
+			margin-top: 80px
+		.promo__menu
+			width: 100%
+			max-width: 768px
+			height: 80px
+			display: flex
+			justify-content: space-around
+	.promo__laptop
+		order: 1
+		margin-top: 60px
+		img
+			width: 250px
+			height: 165px
+	.promo__text
+		order: 0
+		text-align: start
+	.writeMe
+		width: 255px
+		height: 65px
+		margin: 0
+	.projects
+		padding: 80px
+		.projects__container
+			.item
+				&:nth-child(n+4)
+					margin-top: 50px
+	.microsoft	
+		.container
+			.microsoft_container 
+				display: none
+	.cards
+		.cards_container
+			grid-template-columns: 1fr 1fr
+	.skills__container 
+		.slash
+			left: 260px
+	.work		
+		video
+			width: 95%
+   		    height: 95%
+	.feedback
+		.shield3
+			left: 47px
+			bottom: 14px
+			width: 47px
+		.shield5
+			left: 645px
+			width: 47px
+			top: 187px
+		.inputs
+			padding-left: 115px
+	footer
+		padding: 50px 115px
+
+@media ( max-width: 426px)
+	.promo
+		.promo__menu
+			ul
+				display: none
+		.promo__text
+			text-align: center
+			h1
+				font-weight: 600
+				font-size: 24px
+			h4
+				font-size: 14px
+				margin-top: 40px
+				margin: 0 50px
+		.promo_info
+			.promo__laptop
+				display: flex
+				flex-direction: column
+				button
+					order: 1
+					margin-top: 50px
+	.about
+		h2
+			font-weight: 600
+			font-size: 24px
+		h4
+			font-size: 14px
+			margin: 0 30px
+	.projects
+		.item
+			&:nth-child(2)
+				margin: 50px 0
+	.skills
+		.slash
+			top: 379px
+			left: 23px
+		.skills_wraper
+			flex-direction: column
+			.skills_item
+				margin: 0 24px
+				.photo
+					width: 284px
+					height: 244px
+					margin: 24px 0 0 94px
+			h2
+				text-align: center
+				font-weight: 600
+				font-size: 24px
+			.divider
+				margin: 10px auto
+	.work
+		padding: 45px 0 70px
+		h2
+			font-weight: 600
+			font-size: 24px
+			margin-top: 45px
+		.divider
+			width: 80px
+			height: 4px
+		h4
+			font-size: 14px
+			line-height: 23px
+			margin: 35px 30px
+	.cards
+		.cards_container
+			grid-template-columns: 1fr
+	.feedback
+		.feedback_container
+			h2
+				font-size: 24px
+			.divider
+				display: none
+			h4
+				font-size: 14px
+				line-height: 23px
+				margin: 25px 75px 40px
+		.inputs
+			padding-left: 87px
+			margin-top: 0px	
+			input 
+				&:first-child 
+					margin-bottom: 20px
+		textarea
+			width: 255px
+			height: 165px
+		.shield5
+			left: 350px
+			top: 183px
+	footer
+		.container_footer
+			flex-direction: column
+			.footer_item
+				text-align: center
+				h2
+					margin-bottom: 20px
+				a
+					&:nth-child(2)
+						margin: 0 22px
+				&:first-child
+					margin-bottom: 20px
+@media ( max-width: 376px)
+	.skills
+		.skills_item
+			overflow: hidden
+	.feedback
+		.shield5
+			left: 315px
+		.shield3
+			left: 15px
+		.inputs
+			padding-left: 62px
+	footer
+		padding: 50px 0			
+				
+
+
+	
+
