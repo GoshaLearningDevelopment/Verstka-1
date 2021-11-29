@@ -30,6 +30,15 @@ li
 		background-color: #E5E9F0 
 		padding: 33px 45px 
 		max-width: 700px 
+		.hmb
+			width: 40px
+			span
+				display: block
+				height: 5px
+				background-color: #34547A
+				&:nth-child(2)
+					margin: 5px 0
+					
 		ul 
 			display: flex 
 			justify-content: space-between 
@@ -123,6 +132,7 @@ li
 	padding: 100px 0 
 	.skills__slider 
 		margin-top: 34px 
+		min-width: 300px
 		.slider_item 
 			margin-bottom: 30px 
 			.slider_text 
@@ -146,8 +156,7 @@ li
 .skills_item 
 	.divider 
 		margin: 10px 0 0 0 
-.gray_line 
-	min-width: 325px 
+.gray_line  
 	height: 4px 
 	width: 100% 
 	background: #C4C4C4 
@@ -292,6 +301,7 @@ li
 			font-size: 16px 
 			line-height: 26px 
 			color: #727272 
+			text-align: center
 		.divider 
 			background: rgba(52, 84, 122, 0.3) 
 			width: 320px 
@@ -408,7 +418,7 @@ footer
 
 @media (max-width: 769px) 
 	.desktop
-    	display: none 
+		display: none 
 	.mobile
 		display: block
 	.promo
@@ -454,7 +464,7 @@ footer
 	.work		
 		video
 			width: 95%
-   		    height: 95%
+   			height: 95%
 	.feedback
 		.shield3
 			left: 47px
@@ -472,6 +482,8 @@ footer
 @media ( max-width: 426px)
 	.promo
 		.promo__menu
+			justify-content: space-between
+			padding: 28px 20px
 			ul
 				display: none
 		.promo__text
@@ -570,9 +582,6 @@ footer
 				&:first-child
 					margin-bottom: 20px
 @media ( max-width: 376px)
-	.skills
-		.skills_item
-			overflow: hidden
 	.feedback
 		.shield5
 			left: 315px
@@ -581,7 +590,20 @@ footer
 		.inputs
 			padding-left: 62px
 	footer
-		padding: 50px 0			
+		padding: 50px 0	
+@media ( max-width: 321px)
+	.skills
+		.skills_wraper
+			.skills_item
+				.photo
+					width: 197px
+					height: 167px
+	.feedback
+		.inputs
+			padding-left: 35px
+		.shield5
+			left: 255px
+			
 				
 
 
