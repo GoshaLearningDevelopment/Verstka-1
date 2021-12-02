@@ -70,9 +70,10 @@ li
 .writeMe 
 	margin-top: 60px 
 	filter: drop-shadow(-6px 5px 0px rgba(52, 84, 122, 0.2)) 
-	background: #34547A 
-	padding: 25px 41px 
+	background: #34547A  
 	color: #FFFFFF 
+	width: 255px
+	height: 65px
 	&:hover 
 		cursor: pointer 
 .iconQr 
@@ -86,7 +87,7 @@ li
 .promo__laptop 
 	margin-left: 122px 
 	margin-left: 0 
-	display: -webkit-box 
+	display: flex 
 .about 
 	padding: 119px 0 78px 0 
 	.about_container 
@@ -109,12 +110,16 @@ li
 	background: #34547A 
 	padding: 100px 
 	.projects__container 
-		display: flex 
-		justify-content: space-between 
-		flex-wrap: wrap
+		display: grid
+		grid-template: 1fr/ repeat(6, 1fr)
 		.item 
 			display: flex 
 			margin: 0 6px
+			justify-content: center
+			img
+				height: 100%
+				width: 100%
+
 		.item_txt 
 			font-style: normal 
 			font-weight: normal 
@@ -129,10 +134,10 @@ li
 				line-height: 25px 
 				color: #FFFFFF 
 .skills 
-	padding: 100px 0 
+	padding: 100px 10px 
 	.skills__slider 
 		margin-top: 34px 
-		min-width: 300px
+		min-width: 270px
 		.slider_item 
 			margin-bottom: 30px 
 			.slider_text 
@@ -146,9 +151,10 @@ li
 		position: absolute 
 		top: 450px  
 	.photo 
-		width: 555px 
-		height: 450px 
-		box-shadow: 9px 9px 130px rgba(52, 84, 122, 0.5) 
+		width: 100% 
+		height: 100% 
+		box-shadow: 9px 9px 130px rgba(52, 84, 122, 0.5)
+		object-fit: cover 
 .skills_wraper 
 	display: flex 
 	justify-content: space-between 
@@ -223,66 +229,12 @@ li
 					background: url("../assets/icons/eyeProject.svg") center center / cover 
 .microsoft 
 	padding: 85px 0 
-	.microsoft_container_slider 
-		display: flex 
-		justify-content: space-between 
-		.slider
-			width: 100%
-			overflow: hidden
-			position: relative
-		.navigation
-			position: absolute
-			bottom: 16px
-			left: 50%
-			transform: translateX(-50%)
-			display: flex
-		.bar
-			height: 13px
-			width: 13px
-			margin: 6px
-			cursor: pointer
-			background-color: #ddd
-			opacity: 0.7
-			border-radius: 100%
-			transition: all 0.4s
-			&:hover
-				opacity: 1
-				transform: scale(1.1)
-				background: #34547A
-			&:active
-				background: #34547A
-				
-			
-				
-			
-		input[name=r] 
-			position: absolute 
-			visibility: hidden 
-		.slider
-			width: 400%
-			height: 100%
-			display: flex
-		.slide
-			width: 25%
-			transition: all 0.6s
-		.slide
-			img
-				width: 100%
-				height: 100%
-		#r1:checked ~ .s1
-			margin-left: 0
-		#r2:checked ~ .s1
-			margin-left: -25%
-		#r3:checked ~ .s1
-			margin-left: -50%
-		#r4:checked ~ .s1
-			margin-left: -75%
 .feedback 
 	background-color: #EEEFF1 
 	padding: 100px 0 
 	.shield5 
 		position: absolute 
-		left: 1000px  
+		right: 100px  
 	.shield3 
 		position: absolute 
 		bottom: -10px 
@@ -306,9 +258,11 @@ li
 			background: rgba(52, 84, 122, 0.3) 
 			width: 320px 
 	.inputs 
-		display: block 
-		margin: 65px auto 0 
-		padding-left: 305px 
+		margin: 0 auto
+		display: flex
+		justify-content: space-between
+		max-width: 540px
+		flex-wrap: wrap
 		input 
 			width: 250px 
 			height: 50px 
@@ -317,12 +271,11 @@ li
 			font-style: normal 
 			font-weight: normal 
 			font-size: 14px 
-			padding-left: 20px 
-			&:first-child 
-				margin-right: 35px 
+			padding-left: 20px  
 	textarea 
 		display: block 
-		width: 540px 
+		width: 47% 
+		min-width: 255px
 		height: 175px 
 		border: none 
 		margin: 20px auto 50px auto 
@@ -373,7 +326,7 @@ footer
 			font-size: 45px
 	.promo__laptop
 		margin-left: 0
-		display: -webkit-box
+		display: flex
 	.promo__text
 		text-align: center
 	.projects
@@ -381,10 +334,7 @@ footer
 			max-width: 1150px
 	.skills__container
 		.slash
-			left: 379px
-		.photo
-			height: 310px
-			width: 374px
+			left: 190px
 		.java_icon
 			top: 325px
 	.work
@@ -393,21 +343,18 @@ footer
    			height: 95%
 
 	.feedback
-		.inputs
-			padding-left: 162px
-		.shield5
-			left: 856px
 		.shield3
 			left: -140px
 
 @media (max-width: 1025px)
 	.feedback
-		.shield5
-			left: 775px
 		.shield3
 			left: 0px
-		.inputs
-			padding-left: 160px
+	.projects
+		.projects__container
+			grid-template: 1fr 1fr/ repeat(3, 1fr)
+			gap: 20px
+
 
 @media (max-width: 1158px)
 	.microsoft
@@ -432,11 +379,13 @@ footer
 			height: 80px
 			display: flex
 			justify-content: space-around
+			li
+				font-size: 13px
 	.promo__laptop
 		order: 1
 		margin-top: 60px
 		img
-			width: 250px
+			width: 100%
 			height: 165px
 	.promo__text
 		order: 0
@@ -447,10 +396,6 @@ footer
 		margin: 0
 	.projects
 		padding: 80px
-		.projects__container
-			.item
-				&:nth-child(n+4)
-					margin-top: 50px
 	.microsoft	
 		.container
 			.microsoft_container 
@@ -459,8 +404,6 @@ footer
 		.cards_container
 			grid-template-columns: 1fr 1fr
 	.skills__container 
-		.slash
-			left: 260px
 	.work		
 		video
 			width: 95%
@@ -471,13 +414,28 @@ footer
 			bottom: 14px
 			width: 47px
 		.shield5
-			left: 645px
+			display: none
 			width: 47px
-			top: 187px
-		.inputs
-			padding-left: 115px
+			top: 150px
 	footer
 		padding: 50px 115px
+
+@media ( max-width: 601px)
+	.promo
+		.promo__menu
+			justify-content: space-between
+			ul
+				display: none
+	.projects
+		.projects__container
+			grid-template: repeat(6, 1fr)/ 1fr
+	.feedback
+		.inputs
+			flex-direction: column
+			align-items: center
+			input
+				&:first-child
+					margin-bottom: 20px
 
 @media ( max-width: 426px)
 	.promo
@@ -511,8 +469,7 @@ footer
 			margin: 0 30px
 	.projects
 		.item
-			&:nth-child(2)
-				margin: 50px 0
+
 	.skills
 		.slash
 			top: 379px
@@ -522,8 +479,8 @@ footer
 			.skills_item
 				margin: 0 24px
 				.photo
-					width: 284px
-					height: 244px
+					width: 75%
+					height: 100%
 					margin: 24px 0 0 94px
 			h2
 				text-align: center
@@ -558,7 +515,6 @@ footer
 				line-height: 23px
 				margin: 25px 75px 40px
 		.inputs
-			padding-left: 87px
 			margin-top: 0px	
 			input 
 				&:first-child 
@@ -567,7 +523,6 @@ footer
 			width: 255px
 			height: 165px
 		.shield5
-			left: 350px
 			top: 183px
 	footer
 		.container_footer
@@ -584,25 +539,21 @@ footer
 @media ( max-width: 376px)
 	.feedback
 		.shield5
-			left: 315px
+			top: 208px
+			right: 10px
+    		
 		.shield3
 			left: 15px
-		.inputs
-			padding-left: 62px
 	footer
 		padding: 50px 0	
 @media ( max-width: 321px)
 	.skills
 		.skills_wraper
 			.skills_item
-				.photo
-					width: 197px
-					height: 167px
+				
 	.feedback
-		.inputs
-			padding-left: 35px
 		.shield5
-			left: 255px
+
 			
 				
 
