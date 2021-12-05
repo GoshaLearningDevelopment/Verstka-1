@@ -24,3 +24,21 @@ forms.forEach((form) => {
         console.log(stringValue.replace(/\s+/g, '') ? stringValue : "Инпуты пустые")
     }, false)
 })
+
+$(document).ready(function(){
+    $('.microsoft_slider').slick({
+        slidesToShow:2,
+        slidesToScroll: 2,
+        dots: true,
+        arrows: false,
+        dotsClass: 'dots',
+        responsive: [
+            {
+                breakpoint: 375,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+  });
