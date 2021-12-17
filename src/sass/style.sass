@@ -162,14 +162,26 @@ li
 .skills_item 
 	.divider 
 		margin: 10px 0 0 0 
+.h
+	.blue_line 
+		width: 89% 
+		height: 100% 
+		background: #34547A
+.c
+	.blue_line
+		width: 69%
+		height: 100%
+		background: #34547A
+.j
+	.blue_line
+		width: 15%
+		height: 100%
+		background: #34547A
 .gray_line  
 	height: 4px 
 	width: 100% 
 	background: #C4C4C4 
-	.blue_line 
-		width: 50% 
-		height: 100% 
-		background: #34547A 
+	 
 .work 
 	padding: 100px 0 
 	background: #EEEFF1 
@@ -228,7 +240,10 @@ li
 					transform: translate(-50%, -50%) 
 					background: url("../assets/icons/eyeProject.svg") center center / cover 
 .microsoft 
-	padding: 85px 0 
+	padding: 85px 0
+	.microsoft_container
+		display: flex
+		justify-content: center 
 	.microsoft_slider
 		max-width: 610px
 		margin: 0 auto
@@ -245,10 +260,15 @@ li
 				height: 20px
 				&:first-child
 					margin-right: 15px
-		.dots 
+		.dots
+			li
+				button
+					font-size: 0 
 			li[class="slick-active"] 
 				button 
-    				background-color: #34547A
+					background-color: #34547A
+					transition: 0.2s all
+					transform: scale(1.1)
 .feedback 
 	background-color: #EEEFF1 
 	padding: 100px 0 
@@ -343,7 +363,7 @@ footer
 		max-width: 862px
 	.promo_info
 		h1
-			font-size: 45px
+			font-size: 35px
 	.promo__laptop
 		margin-left: 0
 		display: flex
@@ -361,7 +381,7 @@ footer
 		video
 			width: 95%
    			height: 95%
-
+			
 	.feedback
 		.shield3
 			left: -140px

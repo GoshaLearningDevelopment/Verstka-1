@@ -10,6 +10,8 @@ function button() {
 
 /* Не сказал бы, что это лучший код, который я писал, но он куда универсальнее чем твой, посмотри как он работает */
 
+alert('ВНИМАНЕ: Все интерактивные элементы на данной странице не функциональны, так как это лишь пример верстки призванный показать мои способности в HTML и CSS')
+
 const forms = document.querySelectorAll("form")
 
 forms.forEach((form) => {
@@ -37,6 +39,7 @@ $(document).ready(function(){
                 breakpoint: 375,
                 settings: {
                     slidesToShow: 1,
+                    slidesToScroll: 1
                 }
             }
         ]
