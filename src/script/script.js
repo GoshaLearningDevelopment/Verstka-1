@@ -1,20 +1,19 @@
-"use strict"; /* деректива которая задает работу в "современном" режиме, где не работают уязвимости и баги старых версий. Стоит прописывать всегда */
-let number = 5; /* переменной под названием number ПРИСВОИТЬ значение 5 */
-const leftBorderWidth = 1; /* другой вариант объявления переменной */
-/* При наименовании переменных учитывается регистр букв */
-/* let- изменяемая переменная, const- константа */
-/* Прямых констант в js нет, и константу можно изменять, если задать константой массив и поместить в него переменную */
+const NumberOfFilms = prompt('Сколько фильмов вы поотрели', '');
 
-const line = 'String'; /* В джаве можно не указывать тип данных переменной, она это сделает автоматически */
-/* При задании переменной типа string не важно какими ковычками пользоваться, можно и одинрными и двойными */
-/* null- объект не существует(выводится в ошибке)/ undefined- память под объект выделена, но не использована (выводится в ошибке) */
-
-const obj = {                                     /* так задается объект, все данные внутри называются свойсвами, а действия методами */
-    name: "Biba",
-    number: 1488,                      /* синтаксис свойств объектов */
-    AlloYobaEtoTy: false
+const PersonalMovieDataBase=  {
+    count: NumberOfFilms,
+    movies: {},
+    actors: {},
+    generes:[],
+    private: false
 };
 
-console.log(obj.AlloYobaEtoTy)                  /* Обращение к свойству объекта происходит через . */
+const a = prompt('Last movie you saw?', ''),
+      b = prompt('Your grade to this movie', ''),
+      c = prompt('Last movie you saw?', ''),
+      d = prompt('Your grade to this movie', '');
 
-let arr =[1, 2, 3, 4]                 /* объявление массива */
+PersonalMovieDataBase.movies[a] = b;
+PersonalMovieDataBase.movies[c] = d;
+
+console.log(PersonalMovieDataBase);
