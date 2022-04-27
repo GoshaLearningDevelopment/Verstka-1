@@ -4,12 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>HELLO WORLD!!</h1>
-
-    <script src="script/script.js"></script>
+<div class="Wraper">
+    <section class="ToDoList">
+        <h1>To do list</h1>
+        <div class="Note">
+            <div class="DTbox">
+                <div class="L_date">
+                    <span>17.02.2022</span>
+                </div>
+                <div class="L_time">
+                    <span>16:34</span>
+                </div>
+            </div>
+            <img src="/assets/X.svg" alt="X" class="close">
+            <div class="NoteText">
+                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto hic pariatur labore! Eaque, minima deserunt repellendus repellat earum possimus ex illum nulla totam dicta quaerat beatae quod voluptatum hic! Nesciunt?</span>
+            </div>
+        </div>
+    </section>
+    <section class="ToDoEdit">
+        <h1>Edit notes</h1>
+        <div class="TimeDateBlock">
+            <div class="Time">
+                
+                <div class="hours">
+                    <button class="arrow_up"></button>
+                    <textarea class="hours"></textarea>
+                    <button class="arrow_down"></button>
+                </div>
+                
+                <span class="dot"></span>
+                <span class="dot"></span>
+                
+                <div class="minutes">
+                    <button class="arrow_up"></button>
+                    <textarea></textarea>
+                    <button class="arrow_down"></button>
+                </div>
+                
+            </div>
+            <div class="Date">
+                <div class="Month">
+                    <h4>Month</h4>
+                    <textarea></textarea>
+                </div>
+                <div class="Day">
+                    <h4>Day</h4>
+                    <textarea></textarea>
+                </div>
+                <div class="Year">
+                    <h4>Year</h4>
+                    <textarea></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="NoteEditor">
+            <textarea class="NoteBlock"></textarea>
+            <button class="SaveBtn">Save</button>
+        </div>
+    </section>
+</div>
+<script src="./script/script.js"></script>
 </body>
 </html>
